@@ -1,5 +1,5 @@
 FULL_ENGLISH_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-FULL_ENTEAN_ALPHABET = "AZYXEWVTISRLPNOMQKJHUGFDCBazyxewvtisrlpnomqkjhugfdc"
+FULL_ENTEAN_ALPHABET = "AZYXEWVTISRLPNOMQKJHUGFDCBazyxewvtisrlpnomqkjhugfdcb"
 
 
 def get_letter(letter):
