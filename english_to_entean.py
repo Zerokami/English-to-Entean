@@ -1,30 +1,13 @@
+
 FULL_ENGLISH_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-FULL_ENTEAN_ALPHABET = "AZYXEWVTISRLPNOMQKJHUGFDCBazyxewvtisrlpnomqkjhugfdcb"
+FULL_ENTEAN_ALPHABET =  "AZYXEWVTISRLPNOMQKJHUGFDCBazyxewvtisrlpnomqkjhugfdcb"
 
 
-def get_letter(letter):
-    """Return english letter translated to entean."""
-    alpha_place = FULL_ENGLISH_ALPHABET.find(letter)
-
-    return FULL_ENTEAN_ALPHABET[alpha_place] if alpha_place >= 0 else letter
-
+tran_tab = str.maketrans(FULL_ENGLISH_ALPHABET, FULL_ENTEAN_ALPHABET)
 
 def to_entean(text):
-    """Return text translated from english to entean."""
-
-    entean_output = ""
-
-    for word in text.split(" "): 
-        entean_word = ""
-
-        for letter in word:
-            entean_letter = get_letter(letter)
-            entean_word += entean_letter
-
-        entean_output += " " + entean_word
-
-    return entean_output.strip()
-
+    return(text.translate(tran_tab))
+    
 
 def main(text=None, with_output=True):
 
