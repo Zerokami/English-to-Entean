@@ -1,5 +1,5 @@
 This is a simple python script that converts English words to Entean.
-Entean is the langauge spoken in Ente Isla from the anime called "The Devil is a part-timer" also called "Hataraku Mao-Sama!".
+Entean is the langauge spoken in Ente Isla, a fictional world from the anime "The Devil is a part-timer" also called "Hataraku Mao-Sama!".
 
 Here is an extract from http://hataraku.wikia.com/wiki/Ente_Isla
 
