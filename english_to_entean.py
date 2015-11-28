@@ -4,6 +4,7 @@ PY2 = sys.version_info[0] == 2 #Returns True if Python version is 2
 
 if PY2:
     from string import maketrans
+    input = raw_input
 else:
     maketrans = str.maketrans
 
@@ -23,10 +24,7 @@ def to_entean(text):
 def main(text=None, with_output=True):
 
     if text is None:
-        if PY2:
-            text = raw_input("Enter English text: ")
-        else:
-            text = input("Enter English text: ")
+        text = input("Enter English text: ")
 
     if with_output:    
         print(text)
