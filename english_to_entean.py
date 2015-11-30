@@ -14,11 +14,11 @@ FULL_ENTEAN_ALPHABET =  "AZYXEWVTISRLPNOMQKJHUGFDCB"
 FULL_ENGLISH_ALPHABET += FULL_ENGLISH_ALPHABET.lower()
 FULL_ENTEAN_ALPHABET += FULL_ENTEAN_ALPHABET.lower()
 
-tran_tab = maketrans(FULL_ENGLISH_ALPHABET, FULL_ENTEAN_ALPHABET)
+translaton_table = maketrans(FULL_ENGLISH_ALPHABET, FULL_ENTEAN_ALPHABET)
 
 
 def to_entean(text):
-    return(text.translate(tran_tab))
+    return(text.translate(translation_table))
     
 
 def main(text=None, with_output=True):
