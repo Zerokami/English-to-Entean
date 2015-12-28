@@ -18,6 +18,7 @@ translation_table = maketrans(FULL_ENGLISH_ALPHABET, FULL_ENTEAN_ALPHABET)
 
 
 def to_entean(text):
+    '''Used the translate method using a translation tablemaketrans() and returns the result'''
     return(text.translate(translation_table))
     
 
